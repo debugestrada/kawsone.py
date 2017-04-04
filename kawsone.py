@@ -5,8 +5,8 @@ from random import getrandbits
 def main():
 	try:
 		for i in range(1,1000):
-			#Use gmail for the + trick to work
-			email = 'moneycats323+{}@gmail.com'.format(getrandbits(40))
+			#Use gmail for the + trick to work. Obviously change the 'nothing' to your gmail.
+			email = 'nothing+{}@gmail.com'.format(getrandbits(40))
 			payload = {"mailinglist_email": email}
 			response = requests.post('http://kawsone.com/', data=payload)
 			print('{}/1000: Registered. Good luck fam! '.format(i))
